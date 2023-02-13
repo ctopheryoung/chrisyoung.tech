@@ -1,11 +1,12 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+const title = "Hello world.";
 ---
 
-<Layout title="Hello world.">
-	<main>
-		<Header />
-		<h1>Hello world.</h1>
-	</main>
+<Layout title={title}>
+  <main>
+    <Header />
+    <h1>{title}</h1>
+  </main>
 </Layout>
